@@ -5,7 +5,7 @@ import { Instagram } from "lucide-react"
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center p-4">
+        <main className="flex min-h-screen flex-col items-center justify-center p-4 analog-fpv">
             <div className="flex flex-col items-center gap-8 max-w-md w-full">
                 {/* Center Image */}
                 <div className="rounded-lg overflow-hidden">
