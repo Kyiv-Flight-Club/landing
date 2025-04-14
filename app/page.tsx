@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Instagram } from "lucide-react"
+import { Label } from "@/components/ui/label"
 
 export default function Home() {
     return (
@@ -20,21 +21,9 @@ export default function Home() {
 
                 {/* Social Media Buttons */}
                 <div className="flex gap-4 w-full">
-                    {/*<Button asChild className="flex-1 bg-[#0088cc] hover:bg-[#0077b5]">*/}
-                    {/*    <Link*/}
-                    {/*        href="https://t.me/yourusername"*/}
-                    {/*        target="_blank"*/}
-                    {/*        rel="noopener noreferrer"*/}
-                    {/*        className="flex items-center justify-center gap-2"*/}
-                    {/*    >*/}
-                    {/*        <Send size={20} />*/}
-                    {/*        <span>Telegram</span>*/}
-                    {/*    </Link>*/}
-                    {/*</Button>*/}
-
                     <Button
                         asChild
-                        className="flex-1 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] hover:opacity-90"
+                        className="pixel-fpv-btn flex-1 group"
                     >
                         <Link
                             href="https://www.instagram.com/kyivflightclub"
@@ -42,9 +31,17 @@ export default function Home() {
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-2"
                         >
-                            <Instagram size={20} />
-                            <span>Instagram</span>
+                            <span className="transition-all group-hover:translate-x-2 group-hover:before:content-['→'] before:mr-2">Instagram</span>
                         </Link>
+                    </Button>
+                    <Button
+                        className="pixel-fpv-btn flex-1 opacity-60 cursor-not-allowed relative"
+                        disabled
+                    >
+                        <span>Telegram</span>
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1">
+                          <Label>available soon</Label>
+                        </div>
                     </Button>
                 </div>
             </div>

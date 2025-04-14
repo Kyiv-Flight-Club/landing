@@ -135,6 +135,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/vt323@npm:^5.2.5":
+  version: 5.2.5
+  resolution: "@fontsource/vt323@npm:5.2.5"
+  checksum: 10c0/54817ea79cf960ae7caa70af3392c0458e85fccb9854158b7781452a840d1e24e6d5c3192b26e76ffd7de1b8cac9ce308961d1901f9cd557cfa640fa067722a6
+  languageName: node
+  linkType: hard
+
 "@humanfs/core@npm:^0.19.1":
   version: 0.19.1
   resolution: "@humanfs/core@npm:0.19.1"
@@ -2594,6 +2601,7 @@ __metadata:
   resolution: "kyivflightclub@workspace:."
   dependencies:
     "@eslint/eslintrc": "npm:^3"
+    "@fontsource/vt323": "npm:^5.2.5"
     "@radix-ui/react-slot": "npm:^1.2.0"
     "@tailwindcss/postcss": "npm:^4"
     "@types/node": "npm:^20"
